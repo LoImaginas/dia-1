@@ -1,23 +1,21 @@
-#Utilidades = P * U - GT
-#P = PRECIO DE SUSCRIPCION
-#U = NUMERO DE USUARIOS
-#GT= GASTOS TOTALES
+#Utilidades = Precio * Usuarios - Gasto total
+#PRECIO DE SUSCRIPCION
+#NUMERO DE USUARIOS
+#GASTOS TOTALES
 from math import pow,sqrt,ceil
 
-input("ingresa el precio de suscripcion:\n")
-p = 50
-print(f"el precio de suscripcion es {p}")
+precio = input("ingresa el precio de suscripcion:\n") #100
+precio = int(precio)
 
-input("ingresa el numero de usuarios:\n")
-u= 150
-print(f"el numero de usuarios es {u}")
+usuarios = input("ingresa el numero de usuarios:\n") #10
+usuarios = int(usuarios)
 
-input("ingresa el gasto total:\n")
-gt=1320
-print(f"el gasto total es {gt}")
+gasto_total = input("ingresa el gasto total:\n") #50
+gasto_total = int(gasto_total)
 
-print(sqrt(p*u-gt))
-Utilidad=78.61
+utilidades = precio * usuarios - gasto_total #utilidades=100*10-50
+print(f"las utilidades son (utilidades) pesos")#950
+
 
 
 
