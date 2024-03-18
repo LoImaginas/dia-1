@@ -12,3 +12,4 @@ print(5%2)#modulo o resto de la division; 1
 print(pow(4,2))
 print(sqrt(100))
 print(ceil(3.001))#aproxima al entero superior
+

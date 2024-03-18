@@ -13,7 +13,7 @@ print("texto"+"34")
 #INTERPOLACION
 print(f"el numero es {numero+2}")
 nombre = "Luna"
-print(f"Tu nombre es {nombre} \n y tu edad es {numero}")
+print(f"Tu nombre es {nombre} \n y tu edad es {numero}")# el contenido de la variable nombre y el contenido de la variable edad 
 print("Tu nombre es "+nombre)
 #string.format
 print("Tu nombre es {} y tu edad es {}".format(nombre,numero))

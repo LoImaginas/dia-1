@@ -55,9 +55,8 @@ texto = texto + "qwe" # texto = "asdqwe"
 
 #precision de datos
 promedio = (4+6+7)/3
-print(f"el promedio es {promedio}")
-print(f"resulta de la division {promedio:.4f}")
-print(f"resulta de la division {round(promedio,3)}")
+print(f"el promedio es {promedio}") #5.666666666666667
+print(f"resulta de la division {promedio:.4f}") #5.6667print(f"resulta de la division {round(promedio,3)}") #5.667
 
 #Ingreso de datos (INPUT)
 nombre = input("Ingrese su nombre:\n")
@@ -67,9 +66,10 @@ print(nombre)
 print(f"Tu nombre es {nombre}")
 print(f"Tu edad es {edad}")
 print(type(edad))#<class 'str'>
+
+apellido = input("ingresa tu apellido:\n")
+direccion = input("ingresa tu direccion:\n")
 print(apellido)
 print(direccion)
-input("ingresa tu apellido:\n")
 print(f"Tu apellido es {apellido}")
-input("ingresa tu direccion:\n")
 print(f"Tu direccio es {direccion}")
