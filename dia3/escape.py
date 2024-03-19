@@ -17,7 +17,7 @@ radio = float(radio) #la funcion float(), transforma un string a float
 #radio = float("6371") --> radio=6371
 radio = float(radio) 
 #paso 3
-#transformar kilomeetros a metros (multiplicar por 1000)
+#transformar kilometros a metros (multiplicar por 1000)
 radio = radio * 1000 #radio = 6371 * 1000 = 6371000
 
 #paso 1 para gravedad
