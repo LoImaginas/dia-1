@@ -6,6 +6,13 @@ for i in range(n):
         filtered_array.append(a[i])
 print(filtered_array)
 
-filtered_array2 =[a[i] for i in range(n) if a[i] >= 1000 ]
+##[expresión1 if condición1 else expresión2 for variable in iterable]
+#siguiendo la logica 
+
+filtered_array2 =[a[i] for i in range(n) if a[i] >= 1000 ] #se utiliza la tercera expresion de comprehesion
+#si el if esta antes del for, DEBE haber un else
+#si solo hau 1 if, va despues de for in range(n)
+
 
 print(filtered_array2)
+
