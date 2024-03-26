@@ -52,6 +52,8 @@ notas["Lolett"] = 5
 print(notas)#
 
 #eliminar par clave:valor
+
+#1 forma 
 """del notas["FELIPE"]"""
 print(notas)#{'Camila': 7, 'Antonio': 5, 'Felipe': 6, 'Daniela': 5, 'Vicente': 1, 'Lolett': 5}
 
