@@ -42,13 +42,9 @@ def calcular(**kwargs): #Controla los cálculos de factorial y productoria segú
     
     for clave, valor in kwargs.items():
      if clave in "factorial":
-            n = int(valor)
-            resultado = factorial(n)
-            print(f"El factorial de {valor} es {resultado}")
+            print(f"El factorial de {valor} es {factorial(int(valor))}")
      elif clave in "productoria":
-            lista = valor
-            resultado = productoria(lista)
-            print(f"La productoria de {lista} es {resultado}")
+            print(f"La productoria de {valor} es {productoria(valor)}")
 
 calcular(factorial=5)  #El factorial de 5 es 120
 calcular(productoria=[3, 6, 4, 2, 8]) #La productoria de [3, 6, 4, 2, 8] es 1152
