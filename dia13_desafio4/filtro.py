@@ -22,6 +22,8 @@ precios = {
     'Tarjeta de Video': 1500000
 }
 
+#filtrar
+
 def filtrar_por_precio(precios, umbral, condicion='mayor'):
     
     #Filtra los productos según un umbral dado y una comparación especificada.
@@ -35,20 +37,26 @@ def filtrar_por_precio(precios, umbral, condicion='mayor'):
     
     return productos_filtrados
 
+
+#aplicar metodo
+
 if len(sys.argv) == 2:
         umbral = int(sys.argv[1])
         resultado = filtrar_por_precio(precios, umbral)
-        print("Los productos mayores al umbral son:", ', '.join(resultado.keys()))
+        if type(resultado)==dict:
+           print("Los productos mayores al umbral son:", ', '.join(resultado.keys()))
+        else:
+            print(resultado) 
 elif len(sys.argv) == 3:
         umbral = int(sys.argv[1])
         condicion = sys.argv[2].lower()
         resultado = filtrar_por_precio(precios, umbral, condicion)
-        if isinstance(resultado, dict):
+        if type(resultado)==dict:
             print("Los productos", condicion, "al umbral son:", ', '.join(resultado.keys()))
         else:
             print(resultado)
 else:
-        print("Uso: python filtro.py <umbral> [mayor|menor]")
+        print("Uso: python3 dia13_desafio4/filtro.py <umbral> [mayor|menor]")
         
         #python3 dia13_desafio4/filtro.py 30000  Los productos mayores al umbral son: Notebook, Monitor, Escritorio, Tarjeta de Video
         #python3 dia13_desafio4/filtro.py 30000 menor Los productos menor al umbral son: Teclado, Mouse
