@@ -32,3 +32,4 @@ meses_mayor_a_umbral_ventas = {clave: valor for clave, valor in ventas.items() i
 print(meses_mayor_a_umbral_ventas)
 #ingresar en la consola 
 # python3 dia9_desafio2/mayor_a.py 40000
+#{'Mayo': 81000, 'Agosto': 41200, 'Noviembre': 91000}
