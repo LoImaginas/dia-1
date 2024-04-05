@@ -1,14 +1,24 @@
 import template as t
 from get import request_get
 
-url=('https://aves.ninjas.cl/api/birds')
-response = request_get(url)
+def pagina_html(url):
+    response = request_get(url)
+    texto = ''
+    for aninja in response:
+        titulo_esp = aninja['name']['spanish']
+        titulo_en = aninja['name']['english']
+        url = aninja['images']['main']
+        texto += t.pajaritos_template.substitute(titulo_esp=titulo_esp,
+                                                 titulo_en=titulo_en,
+                                                 url=url)
+    return texto
 
-texto = ''
-for aninja in response:
-
-       texto += t.pajaritos_template.substitute(h1=aninja["name"]["spanish"],
-                                                h2=aninja["name"]["english"],
-                                                url=aninja["images"]["main"])
-       
+if __name__ == '__main__':
+    url = "https://aves.ninjas.cl/api/birds"
+    
+    html = pagina_html(url)
+    with open('prueba-aves_ninjas/index.html', 'w', encoding='utf-8') as f:
+        f.write(html)
+        print("")
+        print("Sitio web generado correctamente")
        

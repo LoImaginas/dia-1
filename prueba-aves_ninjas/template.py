@@ -16,9 +16,9 @@ $body
 </html>
 ''')
 
-pajaritos_template = Template("""
-            <img src="$url_img_full"
-            <h1 $titulo_esp</h1>
-            <h2 $titulo_en</h2>
+pajaritos_template = Template('''
+            <img src="$url">
+            <h1> $titulo_esp</h1>
+            <h2> $titulo_en</h2>
                
-""")
+''')
